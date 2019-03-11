@@ -1,4 +1,3 @@
-// plugin.js
 module.exports = function ({ types: babelTypes }) {
   return {
     name: "node-env-replacer",

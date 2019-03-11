@@ -12,6 +12,12 @@
         {
           "NODE_ENV": "development"
         }
+    ],
+    [
+      "./src/transfer03",
+      {
+        "library": "lodash"
+      }
     ]
   ]
 }
