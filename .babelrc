@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    [
+      "./src/transfer01",
+      {
+        "bad": "good",
+        "dead": "alive"
+      }
+    ],
+    [
+        "./src/transfer02",
+        {
+          "NODE_ENV": "development"
+        }
+    ]
+  ]
+}
