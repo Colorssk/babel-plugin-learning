@@ -25,3 +25,6 @@
 运行transfer03插件：  
 
   npx babel --plugin ./src/transfer03.js ./src/code.js  
+运行transfer04插件：  
+
+  npx babel --plugin ./src/transfer04.js ./src/code.js  
