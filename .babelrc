@@ -18,6 +18,9 @@
       {
         "library": "lodash"
       }
+    ],
+    [
+      "./src/transfer04"
     ]
   ]
 }
