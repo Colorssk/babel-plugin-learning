@@ -14,7 +14,7 @@
     transfer04实现功能，内存泄漏优化：  
     
     暂时解决情况：  
-    意外的全局变量：  
+    1:意外的全局变量：  
 
     JavaScript对未声明变量的处理方式：  
 
@@ -24,7 +24,8 @@
     如果未声明的变量缓存大量的数据，会导致这些数据只有在窗口关闭或重新刷新页面时才能被释放。这样会造成意外的内存泄漏。  
     其他解决法案：采用严格模式  
     说明：本插件是一个小应用，后期会更新兼容更多的内存泄漏的情况，其实通过用webpack的tapable编写loader插件也能很好的解决问题，后期会有开源  
-
+    2：自动清除ocnsole.log()等控制台输出（这个是会造成内存泄漏的）  
+    
 
 
 借鉴github地址:https://github.com/babel/minify/tree/master/packages/babel-plugin-transform-inline-environment-variables  

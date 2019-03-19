@@ -44,6 +44,13 @@ let visitor = {
   //     }
   //   }
   // },
+  CallExpression(path, ref = {}){
+    let { callee } = path.node
+    let { object, property } = callee
+    if(object.name=='console'||property.name=='log'){
+      path.remove()
+    }
+  },
   VariableDeclaration:{
     enter(path){
       let node = path.node;
